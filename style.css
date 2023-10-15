@@ -238,7 +238,7 @@ a:has(.nav-logo):focus {
 .landing-text-section {
     --_line-height: 1.5;
     --_gap: calc(var(--fs-150) * var(--_line-height));
-    padding: var(--dm_0100) var(--dm_0100) var(--dm_1200);
+    padding: var(--dm_0300) var(--dm_0100) var(--dm_1200);
 }
 
 .landing-text-section > :not(:first-child) {
