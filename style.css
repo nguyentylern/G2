@@ -401,3 +401,13 @@ footer a {
 .primary-text-section + .primary-text-section {
     margin-block-start: var(--dm_0300);
 }
+
+@media (width < 52rem) {
+    .primary-text-section {
+        display: block;
+    }
+
+    .primary-text-section-content {
+        margin-block-start: var(--_gap);
+    }
+}
