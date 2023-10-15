@@ -174,11 +174,15 @@ header nav ul :first-child {
     }
 }
 
+:root {
+    --nav-height: calc(calc(var(--dm_0100) * 2) + var(--fs-100));
+}
+
 /* landing hero */
 
 .hero {
     height: 100vh;
-    padding-block-start: calc(calc(var(--dm_0100) * 2) + var(--fs-100));
+    padding-block-start: var(--nav-height);
 }
 
 .landing-hero {
@@ -400,6 +404,11 @@ footer a {
 
 .primary-text-section + .primary-text-section {
     margin-block-start: var(--dm_0300);
+}
+
+.primary-text-section-heading > * {
+    position: sticky;
+    top: var(--nav-height);
 }
 
 @media (width < 52rem) {
