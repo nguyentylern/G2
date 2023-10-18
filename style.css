@@ -93,6 +93,7 @@ html {
     font-family: 'Uncut Sans', sans-serif;
     font-weight: var(--fw-uncut-regular);
     font-style: normal;
+    font-feature-settings: "ss08" on; /* uncut alternate arrows */
 
     background-color: var(--clr-background);
     color: var(--clr-foreground);
@@ -385,7 +386,8 @@ footer a {
     font-weight: var(--fw-uncut-bold);
 }
 
-.major-article h2 {
+.major-article h2,
+.primary-text-section-heading {
     font-family: "Redaction", serif;
     font-size: var(--fs-200);
 }
@@ -499,6 +501,10 @@ footer a {
     row-gap: 0;
 }
 
+.landing-references {
+    margin-bottom: var(--dm_1200);
+}
+
 .references-list {
     font-size: var(--fs-100);
     line-height: var(--text-line-height);
@@ -525,26 +531,25 @@ footer a {
     content: " \2192";
 }
 
-.block-link {
+p.block-link-text {
     font-size: var(--fs-100);
-    color: var(--clr-foreground);
-    display: block;
 }
 
-.references-list + .block-link,
-.block-link + .block-link {
+.references-list + .block-link-text,
+.block-link-text + .block-link-text {
     margin-block-start: var(--gap-150);
 }
 
-.block-link::after {
+.block-link-text::after {
     content: " \2192";
 }
 
-.block-link-text {
+.block-link {
     font-weight: var(--fw-uncut-bold);
+    color: var(--clr-foreground);
 }
 
-.block-link-text:hover {
+.block-link:hover {
     text-decoration: underline;
 }
 
@@ -559,7 +564,7 @@ footer a {
         grid-column: 2 / -1;
     }
 
-    .block-link {
+    .block-link-text {
         grid-column: 2 / -1;
     }
 }
