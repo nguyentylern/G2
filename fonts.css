@@ -6,9 +6,8 @@
 	font-weight: 300;
 	font-display: swap;
 	src:
-	    url(fonts/UncutSans-Light.woff2) format("woff2"),
-        url(fonts/UncutSans-Light.woff) format("woff"),
-        url(fonts/UncutSans-Light.otf) format("opentype");
+                url('/fonts/UncutSans-Light.woff2') format("woff2"),
+                url('/fonts/UncutSans-Light.woff') format("woff");
 }
 
 @font-face {
@@ -17,9 +16,8 @@
 	font-weight: 300;
 	font-display: swap;
 	src:
-        url(fonts/UncutSans-LightItalic.woff2) format("woff2"),
-        url(fonts/UncutSans-LightItalic.woff) format("woff"),
-        url(fonts/UncutSans-LightItalic.otf) format("opentype");
+                url('/fonts/UncutSans-LightItalic.woff2') format("woff2"),
+                url('/fonts/UncutSans-LightItalic.woff') format("woff");
 }
 
 @font-face {
@@ -28,9 +26,8 @@
 	font-weight: 400;
 	font-display: swap;
 	src:
-        url(fonts/UncutSans-Regular.woff2) format("woff2"),
-        url(fonts/UncutSans-Regular.woff) format("woff"),
-        url(fonts/UncutSans-Regular.otf) format("opentype");
+                url('/fonts/UncutSans-Regular.woff2') format("woff2"),
+                url('/fonts/UncutSans-Regular.woff') format("woff");
 }
 
 @font-face {
@@ -39,9 +36,8 @@
 	font-weight: 400;
 	font-display: swap;
 	src:
-        url(fonts/UncutSans-RegularItalic) format("woff2"),
-        url(fonts/UncutSans-RegularItalic.woff) format("woff"),
-        url(fonts/UncutSans-RegularItalic.otf) format("opentype");
+                url('/fonts/UncutSans-RegularItalic.woff2') format("woff2"),
+                url('/fonts/UncutSans-RegularItalic.woff') format("woff");
 }
 
 @font-face {
@@ -50,58 +46,56 @@
 	font-weight: 600;
 	font-display: swap;
 	src:
-        url(fonts/UncutSans-Semibold.woff2) format("woff2"),
-        url(fonts/UncutSans-Semibold.woff) format("woff"),
-        url(fonts/UncutSans-Semibold.otf) format("opentype");
+                url('/fonts/UncutSans-Semibold.woff2') format("woff2"),
+                url('/fonts/UncutSans-Semibold.woff') format("woff");
 }
 
 @font-face {
-	font-family: 'Uncut Sans';
-	font-style: italic;
+        font-family: 'Uncut Sans';
+        font-style: italic;
 	font-weight: 600;
 	font-display: swap;
 	src:
-        url(fonts/UncutSans-SemiboldItalic.woff2) format("woff2"),
-        url(fonts/UncutSans-SemiboldItalic.woff) format("woff"),
-        url(fonts/UncutSans-SemiboldItalic.otf) format("opentype");
+                url('/fonts/UncutSans-SemiboldItalic.woff2') format("woff2"),
+                url('/fonts/UncutSans-SemiboldItalic.woff') format("woff");
 }
 
 @font-face{
-	font-family: 'Uncut Sans Var';
-	font-style: oblique 0 11deg;
-	font-variation-settings: 'ital' 0;
-	font-weight: 300 700;
-	font-display: swap;
-	src:
-        url(fonts/UncutSans-Variable.woff2) format('woff2'),
-        url(fonts/UncutSans-Variable.ttf) format('truetype');
+        font-family: 'Uncut Sans Var';
+        font-style: oblique 0 11deg;
+        font-variation-settings: 'ital' 0;
+        font-weight: 300 700;
+        font-display: swap;
+        src:
+                url('/fonts/UncutSans-Variable.woff2') format('woff2'),
+                url('/fonts/UncutSans-Variable.ttf') format('truetype');
 }
 
 /* redaction */
 
 @font-face {
-    font-family: 'Redaction';
-    src: url('fonts/Redaction35-Regular.woff2') format('woff2'),
-         url('fonts/Redaction35-Regular.woff') format('woff'),
-         url('fonts/Redaction35-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
+        font-family: 'Redaction';
+        font-style: normal;
+        font-weight: normal;
+        src: 
+                url('/fonts/Redaction35-Regular.woff2') format('woff2'),
+                url('/fonts/Redaction35-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Redaction';
-    src: url('fonts/Redaction35-Italic.woff2') format('woff2'),
-         url('fonts/Redaction35-Italic.woff') format('woff'),
-         url('fonts/Redaction35-Italic.otf');
-    font-weight: normal;
-    font-style: italic;
+        font-family: 'Redaction';
+        font-style: italic;
+        font-weight: normal;
+        src:
+                url('/fonts/Redaction35-Italic.woff2') format('woff2'),
+                url('/fonts/Redaction35-Italic.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Redaction';
-    src: url('fonts/Redaction35-Bold.woff2') format('woff2'),
-         url('fonts/Redaction35-Bold.woff') format('woff'),
-         url('fonts/Redaction35-Bold.otf');
-    font-weight: bold;
-    font-style: normal;
+        font-family: 'Redaction';
+        font-style: normal;
+        font-weight: bold;
+        src:
+                url('/fonts/Redaction35-Bold.woff2') format('woff2'),
+                url('/fonts/Redaction35-Bold.woff') format('woff');
 }
