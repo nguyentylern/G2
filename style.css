@@ -73,10 +73,10 @@ p, h1, h2, h3, h4, h5, h6 {
     --fs-100: 1rem;
     --fs-075: 0.75rem;
 
-    --dm_0100: 1.5rem;
-    --dm_0200: 3rem;
-    --dm_0300: 4.5rem;
-    --dm_1200: 12rem;
+    --dm-0100: 1.5rem;
+    --dm-0200: 3rem;
+    --dm-0300: 4.5rem;
+    --dm-1200: 12rem;
 }
 
 /* typography media */
@@ -115,14 +115,14 @@ header {
 }
 
 header nav {
-    padding: var(--dm_0100);
+    padding: var(--dm-0100);
 }
 
 header nav ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: var(--dm_0100);
+    gap: var(--dm-0100);
 }
 
 header nav ul :first-child {
@@ -176,7 +176,7 @@ header nav ul :first-child {
 }
 
 :root {
-    --nav-height: calc(calc(var(--dm_0100) * 2) + var(--fs-100));
+    --nav-height: calc(calc(var(--dm-0100) * 2) + var(--fs-100));
 }
 
 /* landing hero */
@@ -192,7 +192,7 @@ header nav ul :first-child {
 }
 
 .landing-hero-heading {
-    padding: var(--dm_0200) var(--dm_0100) var(--dm_0300);
+    padding: var(--dm-0200) var(--dm-0100) var(--dm-0300);
 }
 
 .landing-hero-aside {
@@ -204,7 +204,7 @@ header nav ul :first-child {
 .landing-hero-aside-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--dm_0100);
+    gap: var(--dm-0100);
 }
 
 .landing-hero-aside-content > * {
@@ -240,7 +240,7 @@ div:has(> .hero-logo-small) {
     .landing-hero-aside {
         align-content: center;
         justify-content: start;
-        padding: var(--dm_0100);
+        padding: var(--dm-0100);
     }
 
     .landing-hero-aside-content {
@@ -269,7 +269,7 @@ div:has(> .hero-logo-small) {
 }
 
 .landing-text-section {
-    padding: var(--dm_0300) var(--dm_0100) var(--dm_1200);
+    padding: var(--dm-0300) var(--dm-0100) var(--dm-1200);
 }
 
 .landing-text-section h2 {
@@ -278,7 +278,7 @@ div:has(> .hero-logo-small) {
 }
 
 .landing-text-section h2 + div {
-    margin-block-start: var(--gap-150);
+    margin-block-start: var(--dm-0300);
 }
 
 .landing-text-section h3 {
@@ -295,11 +295,11 @@ div:has(> .hero-logo-small) {
 .landing-text-section div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--dm_0100);
+    gap: var(--dm-0100);
 }
 
 .landing-text-section div + div {
-    margin-block-start: var(--dm_0300);
+    margin-block-start: var(--dm-0300);
 }
 
 @media (width < 56rem) {
@@ -318,15 +318,15 @@ div:has(> .hero-logo-small) {
 footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--dm_0100);
-    padding: var(--dm_0100) var(--dm_0100) var(--dm_0300);
+    gap: var(--dm-0100);
+    padding: var(--dm-0100) var(--dm-0100) var(--dm-0300);
 }
 
 footer nav ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--dm_0100);
+    gap: var(--dm-0100);
 }
 
 footer nav ul :nth-child(2n) {
@@ -358,14 +358,35 @@ footer a {
     }
 
     footer div + div {
-        margin-block-start: var(--dm_0300);
+        margin-block-start: var(--dm-0300);
     }
 }
 
 /* energy page */
 
-.hero:has(> img) {
+.hero:has(img) {
     padding-block-start: 0;
+    display: grid;
+    align-items: end;
+}
+
+.hero:has(img) .img-container img {
+    max-height: 100vh;
+}
+
+.img-container {
+    display: grid;
+    align-items: end;
+}
+
+.img-container > * {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.img-container .references-image {
+    padding-inline-start: var(--dm-0100);
+    padding-block-end: calc(var(--dm-0100) / 1.5);
 }
 
 .hero img {
@@ -377,11 +398,11 @@ footer a {
 /* energy page content */
 
 .major-article {
-    margin-block-end: var(--dm_1200);
+    margin-block-end: var(--dm-1200);
 }
 
 .major-article-heading {
-    padding: var(--dm_0300) var(--dm_0100) 0;
+    padding: var(--dm-0300) var(--dm-0100) 0;
     font-size: var(--fs-300);
     font-weight: var(--fw-uncut-bold);
 }
@@ -399,8 +420,8 @@ footer a {
 .primary-text-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 var(--dm_0100);
-    padding-inline: var(--dm_0100);
+    gap: 0 var(--dm-0100);
+    padding-inline: var(--dm-0100);
 }
 
 .primary-text-section-heading {
@@ -427,7 +448,7 @@ footer a {
 }
 
 .primary-text-container > :not(:first-child) {
-    margin-block-start: var(--dm_0300);
+    margin-block-start: var(--dm-0300);
 }
 
 @media (width < 52rem) {
@@ -471,7 +492,7 @@ footer a {
     .image-caption-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--dm_0100);
+        gap: var(--dm-0100);
     }
 
     .image-caption {
@@ -493,16 +514,31 @@ footer a {
     text-decoration: underline;
 }
 
+@supports (mix-blend-mode: difference) {
+    .references-image {
+        color: var(--clr-background);
+        mix-blend-mode: difference;
+    }
+
+    .references-image .footnote-link a {
+        color: var(--clr-background);
+    }
+}
+
 .primary-text-section.references-section {
-    margin-block-start: var(--dm_1200);
+    margin-block-start: var(--dm-1200);
 }
 
 .primary-text-section.references-section .primary-text-section-content {
     row-gap: 0;
 }
 
+.primary-text-section.references-section .primary-text-section-content p {
+    font-size: var(--fs-100);
+}
+
 .landing-references {
-    margin-bottom: var(--dm_1200);
+    margin-bottom: var(--dm-1200);
 }
 
 .references-list {
@@ -535,8 +571,7 @@ p.block-link-text {
     font-size: var(--fs-100);
 }
 
-.references-list + .block-link-text,
-.block-link-text + .block-link-text {
+.references-section .primary-text-section-content > :not(:first-child) {
     margin-block-start: var(--gap-150);
 }
 
@@ -555,7 +590,7 @@ p.block-link-text {
 
 @media (width < 52rem) {
     .references-list {
-        list-style-position: inside;
+        padding-left: 2ch;
     }
 }
 
@@ -576,7 +611,7 @@ p.block-link-text {
 }
 
 .no-hero .major-article-heading {
-    padding-block-start: var(--dm_0200);
+    padding-block-start: var(--dm-0200);
 }
 
 .references-container {
@@ -588,13 +623,20 @@ p.block-link-text {
 }
 
 .references-container .references-section:nth-child(2) {
-    margin-block-start: var(--dm_1200);
+    margin-block-start: var(--dm-1200);
 }
 
 .references-container .references-section:nth-child(n+3) {
-    margin-block-start: var(--dm_0300);
+    margin-block-start: var(--dm-0300);
 }
 
 .references-container .references-list .references-item:not(:first-child) {
     margin-block-start: var(--gap-150);
+}
+
+/* credits */
+
+.inline-link {
+    color: var(--clr-foreground);
+    text-decoration: underline;
 }
