@@ -367,7 +367,6 @@ footer a {
 .hero:has(img) {
     padding-block-start: 0;
     display: grid;
-    align-items: end;
 }
 
 .hero:has(img) .img-container img {
