@@ -313,6 +313,10 @@ div:has(> .hero-logo-small) {
     }
 }
 
+.landing-image {
+    width: 100%;
+}
+
 /* footer */
 
 footer {
