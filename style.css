@@ -313,7 +313,7 @@ div:has(> .hero-logo-small) {
     }
 }
 
-.landing-image {
+.landing-image > img {
     width: 100%;
 }
 
